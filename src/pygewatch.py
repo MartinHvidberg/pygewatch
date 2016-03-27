@@ -1,5 +1,8 @@
+#!/usr/bin/env python
 
-# https://docs.python.org/2/howto/urllib2.str_html
+""" pygewatch - Python Page Watcher
+Look at web-pages and check if they have changes since last check.
+Keeps a .json file with sha224 (hash) values, and change is detected by comparing the sha224 values."""
 
 import json
 from datetime import datetime
@@ -7,6 +10,10 @@ import urllib2
 import hashlib
 
 import ecmail
+
+__author__ = "Martin Hvidberg"
+__email__ = "martin@hvidberg.net"
+__repo__ = "https://MartinHvidberg@bitbucket.org/MartinHvidberg/pygewatch"
 
 # *** Read json file
 fil_json = open('pygewatch.json')
