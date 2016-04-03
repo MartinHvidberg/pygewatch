@@ -13,9 +13,9 @@ __email__ = "martin@hvidberg.net"
 __repo__ = "https://MartinHvidberg@bitbucket.org/MartinHvidberg/pygewatch"
 
 def email_simple(sub_in="This is the subject string", msg_in="This is the message body ...", to_in="me@home.net"):
-    ec_server = 'mail.domain.net'# <--- Your e-mail server ------ Edit this before using -------------
-    ec_sender = 'me@domain.net' # <--- Your sender e-mail address ------ Edit this before using -------------
-    ec_paswrd = 'my_password' # <--- The password to go with the above ----- Edit this before using -------------
+    ec_server = 'mail.hvidberg.net'
+    ec_sender = 'martin@hvidberg.net'
+    ec_paswrd = 'ovod13cliche'
     msg = MIMEText(msg_in)
     msg['Subject'] = sub_in
     msg['From'] = ec_sender
